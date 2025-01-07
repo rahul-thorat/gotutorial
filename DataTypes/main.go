@@ -2,6 +2,7 @@ package main
 
 import (
 	"fmt"
+	funcs "gotutorial/Funcs"
 	"unicode/utf8"
 )
 
@@ -38,5 +39,7 @@ func main() {
 	var1, var2, var3 := 1, "Hello", false
 	fmt.Printf("%d %s %t\n", var1, var2, var3)
 	fmt.Println(utf8.RuneCountInString(var2))
+
+	funcs.FuncsCaller()
 
 }
