@@ -1,12 +1,11 @@
-package main
+package datatypes
 
 import (
 	"fmt"
-	funcs "gotutorial/Funcs"
 	"unicode/utf8"
 )
 
-func main() {
+func Datatypes() {
 	//int int8 int16 int32 int64
 	//uint uint8 uint16 uint32 uint64 -> unsigned
 	var num int64 = 12345
@@ -39,7 +38,4 @@ func main() {
 	var1, var2, var3 := 1, "Hello", false
 	fmt.Printf("%d %s %t\n", var1, var2, var3)
 	fmt.Println(utf8.RuneCountInString(var2))
-
-	funcs.FuncsCaller()
-
 }
